@@ -1,0 +1,4 @@
+-- SQL 고득점 Kit
+-- 분류 : SUM, MAX, MIN
+SELECT MIN(DATETIME)
+  FROM ANIMAL_INS;
