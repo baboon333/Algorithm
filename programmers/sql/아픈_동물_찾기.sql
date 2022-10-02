@@ -1,0 +1,6 @@
+-- SQL 고득점 Kit
+-- 분류 : SELECT 
+SELECT ANIMAL_ID
+     , NAME
+  FROM ANIMAL_INS
+ WHERE INTAKE_CONDITION = 'Sick';

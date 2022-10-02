@@ -1,0 +1,6 @@
+-- SQL 고득점 Kit
+-- 분류 : SELECT 
+SELECT ANIMAL_ID
+     , NAME
+  FROM ANIMAL_INS
+ ORDER BY ANIMAL_ID;
