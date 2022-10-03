@@ -1,0 +1,14 @@
+-- SQL 고득점 Kit
+-- 분류 : JOIN
+SELECT NAME
+     , DATETIME
+  FROM (
+    SELECT AI.NAME
+         , AI.DATETIME
+      FROM ANIMAL_INS AI
+         , ANIMAL_OUTS AO
+     WHERE AI.ANIMAL_ID = AO.ANIMAL_ID(+)
+       AND AO.ANIMAL_ID IS NULL
+     ORDER BY AI.DATETIME
+       ) RNK
+ WHERE ROWNUM <= 3;
