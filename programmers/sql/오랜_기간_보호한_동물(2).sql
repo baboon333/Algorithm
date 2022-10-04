@@ -1,0 +1,13 @@
+-- SQL 고득점 Kit
+-- 분류 : String, Date
+SELECT ANIMAL_ID
+     , NAME
+  FROM (
+    SELECT AO.ANIMAL_ID
+         , AO.NAME
+      FROM ANIMAL_INS AI
+         , ANIMAL_OUTS AO
+     WHERE AO.ANIMAL_ID = AI.ANIMAL_ID
+     ORDER BY AO.DATETIME - AI.DATETIME DESC
+       ) 
+ WHERE ROWNUM <= 2;
