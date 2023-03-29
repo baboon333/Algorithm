@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>세 수 중 최솟값</title>
+</head>
+<body>
+    <script>
+        // 2023.03.29
+        // 코드를 간결하게 작성하지 못한게 아쉬운 부분.
+        // 가독성을 위해 괄호 생략, 한줄로 작성하기.
+        function solution(a, b, c){
+            let answer;
+
+            if (a < b) {
+                answer = a;
+            } else {
+                answer = b;
+            }
+            if (c < answer) {
+            answer = c;
+            }
+
+            return answer;
+        }
+
+        console.log(solution(26, 33, 7));
+    </script>
+</body>
+</html>
