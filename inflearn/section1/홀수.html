@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>홀수</title>
+    </head>
+    <body>
+        <script>
+            function solution(arr){debugger;
+                let sum = 0;
+                let min = 100;   
+                for (const num of arr) {
+                    if (num % 2 === 1) {
+                        sum += num
+                        if (min > num) min = num;
+                    }
+                }
+                console.log(sum);
+                return min;
+            }
+            
+            arr=[12, 77, 38, 41, 53, 92, 85];
+            console.log(solution(arr));
+        </script>
+    </body>
+</html>
